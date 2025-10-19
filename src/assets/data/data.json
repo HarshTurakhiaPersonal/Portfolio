@@ -1,11 +1,11 @@
 {
   "main": {
-    "name": "Harsh",
-    "shortDesc": "I focus on developing user-friendly web applications that meet the client's requirements, with attention to detail, scalability, and performance.",
+    "name": "Harsh Turakhia",
+    "shortDesc": "Software Developer",
     "titles": [
       "Software Development"
     ],
-    "heroImage": "https://img.freepik.com/free-psd/3d-illustration-person-with-sunglasses_23-2149436188.jpg",
+    "heroImage": "https://static.vecteezy.com/system/resources/previews/045/092/763/non_2x/successful-professional-business-man-with-crossed-arms-flat-illustration-on-white-background-free-vector.jpg",
     "techStackImages": [
       "https://img.icons8.com/color/144/000000/material-ui.png",
       "https://img.icons8.com/color/144/000000/html-5--v1.png",
@@ -14,7 +14,7 @@
     ]
   },
   "about": {
-    "aboutImage": "https://img.freepik.com/free-psd/3d-illustration-person-with-sunglasses_23-2149436188.jpg",
+    "aboutImage": "https://media.istockphoto.com/id/2171116816/vector/software-engineer-writing-code-on-computer-coder-programming-database-programmer-typing.jpg?s=612x612&w=0&k=20&c=Me38Ik6uodfiNku4rlULWO0FGiutnqPSvTn2KdSHed4=",
     "aboutImageCaption": "< Harsh 🚀/>",
     "title": "Full Stack Developer",
     "about": "I'm a Full Stack Developer with hands-on experience in building scalable web applications using modern technologies like Angular, .NET Core, and PostgreSQL. With a strong foundation in Computer Science and industry experience at TatvaSoft, I’ve led and contributed to diverse projects. I’m passionate about clean architecture, performance optimization, and writing reusable, maintainable code.",
