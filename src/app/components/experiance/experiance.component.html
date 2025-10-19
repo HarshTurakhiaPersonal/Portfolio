@@ -1,0 +1,47 @@
+<section id="experience" style="margin-top: 10rem;"
+    class="min-h-screen bg-gradient-to-b from-white to-gray-100/20 dark:from-grey-900 dark:to-grey-900 dark:text-white">
+    <h2 class="text-4xl text-center">{{ show }}</h2>
+
+    <div class="w-fit mx-auto mt-6 p-2 bg-white dark:bg-grey-800 rounded-md flex gap-2 items-center">
+        <button *ngFor="let tab of ['Experience', 'Education']" class="py-2 px-4 rounded-md transition-colors"
+            [ngClass]="{
+        'bg-violet-600 text-white': tab === show,
+        'hover:bg-gray-100 dark:text-gray-200 text-black hover:dark:bg-grey-900': tab !== show
+        }" (click)="setShow(tab)">
+            {{ tab }}
+        </button>
+    </div>
+
+    <div class="lg:container sm:mx-4 lg:mx-auto lg:w-5/6 2xl:w-3/4">
+        <div class="relative wrap overflow-hidden p-4 md:py-10 md:px-0">
+            <div
+                class="left-6 md:left-1/2 absolute border-opacity-20 border-gray-400 dark:border-grey-800 h-full border">
+            </div>
+
+            <div *ngIf="viewAll;">
+                <div *ngIf="show === 'Experience'">
+                    <div *ngFor="let item of  experiences ; let i = index;">
+                        <app-experiance-card [index]="i" [company]="item.company" [position]="item.position"
+                            [desc]="item.desc" [duration]="item.duration" />
+                    </div>
+                </div>
+                <div *ngIf="show === 'Education'">
+                    <div *ngFor="let item of  educations ; let i = index;">
+                        <app-experiance-card [index]="i" [institute]="item.institute" [degree]="item.degree"
+                            [desc]="item.desc" [duration]="item.duration" />
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- <div *ngIf="(show === 'Experience' ? experiences : educations).length > 2">
+        <div class="bg-white dark:bg-grey-900 w-4/5 mx-auto blur-xl z-20 -translate-y-14 h-16"></div>
+        <div class="text-center -translate-y-24">
+            <button (click)="viewAll = !viewAll"
+                class="bg-violet-600 text-white px-4 {{ !viewAll ? 'animate-bounce' : 'animate-none' }} py-1.5 rounded-md hover:shadow-xl transition-all">{{
+                viewAll ? 'Okay, I got it' : 'View All' }}</button>
+        </div>
+    </div> -->
+
+</section>

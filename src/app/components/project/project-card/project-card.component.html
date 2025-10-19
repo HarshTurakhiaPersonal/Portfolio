@@ -1,0 +1,26 @@
+<div class="flex flex-col gap-2 bg-white dark:bg-grey-800 rounded-lg p-4"
+    [ngStyle]="{ 'opacity': inView ? 1 : 0, 'transform': inView ? 'translateY(0)' : 'translateY(50px)' }"
+    (intersection)="onIntersection($event)"
+    style="height: 25rem; width: 30rem;">
+
+    <div class="relative group rounded-lg bg-violet-50" style="height: 25rem; width: 30rem;">
+        <img *ngIf="project.image.trim()" alt="{{ project.name }}" [src]="project.image"
+            class="max-w-full h-48 max-h-full object-cover object-top rounded-lg w-full" />
+        <img *ngIf="!project.image.trim()" src="./../../../../assets/images/Image UnAvilable.png"
+            alt=" {{project.name}} " class="max-w-full h-48 max-h-full object-cover object-top rounded-lg w-full" />
+
+        <div class="absolute top-0 scale-x-0 group-hover:scale-100 transition-transform origin-left duration-200 ease-linear bg-gray-800 bg-opacity-60 w-full h-full rounded-lg flex items-center gap-4 justify-center"
+            *ngIf="project.links.techStack.trim()">
+            <p class="bg-white text-black p-2 mx-3 rounded-lg hover:bg-black hover:text-white transition-all">
+                {{project.techstack}}
+            </p>
+        </div>
+    </div>
+
+    <div class="my-2 flex flex-col gap-3">
+        <h3 class="text-xl font-medium">{{ project.name }}</h3>
+        <p class="text-sm text-gray-400"><span class="font-medium"></span> -> {{ project.desc1 }}</p>
+        <p class="text-sm text-gray-400"><span class="font-medium"></span> -> {{ project.desc2 }}</p>
+    </div>
+
+</div>

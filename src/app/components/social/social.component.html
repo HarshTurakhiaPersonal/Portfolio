@@ -1,0 +1,9 @@
+<section id="socials" class="fixed xl:bottom-4 xl:left-4 2xl:bottom-10 2xl:left-10 hidden lg:flex flex-col gap-3 z-20">
+  <a target="_blank" rel="noreferrer" *ngFor="let icon of social"
+    class="grid place-items-center p-3 hover:animate-bounce rounded-full bg-violet-700 text-white" href="{{icon.link}}">
+
+    <img [src]="icon.icon" width="20" height="20" decoding="async" data-nimg="1"
+      class="" loading="lazy" style="color: transparent;">
+
+  </a>
+</section>

@@ -1,0 +1,122 @@
+<div [ngClass]="{ 'dark': isDarkEnable }">
+  <mat-sidenav-container>
+    <mat-sidenav
+      class="flex flex-col p-4 gap-5 bg-gray-100/95 backdrop-filter backdrop-blur-sm w-3/4 dark:bg-gray-900/95"
+      style="position: fixed;" #sidenav mode="over">
+      <mat-nav-list>
+        <ul class="flex flex-col gap-4">
+          <li *ngFor="let nav of navs">
+            <a href="#{{nav.toLowerCase()}}" (click)="sidenav.toggle()"
+              class='class=" hover:text-white hover:bg-cyan-600 group flex  px-2 py-2 text-sm leading-6 font-medium rounded-md my-1 uppercase text-black dark:text-white dark:hover:bg-violet-700 dark:hover:text-white dark:group-hover:bg-violet-700 dark:group-hover:text-white"'>{{nav}}</a>
+          </li>
+        </ul>
+      </mat-nav-list>
+    </mat-sidenav>
+
+    <mat-sidenav-content>
+      <mat-toolbar class="backdrop-filter backdrop-blur-lg dark:bg-grey-900 dark:bg-opacity-40 border-gray-200 dark:border-b-0 z-30
+      min-w-full flex flex-col fixed">
+        <nav class=" lg:w-11/12 2xl:w-4/5 w-full md:px-6 2xl:px-0 mx-auto py-4 hidden sm:flex items-center
+        justify-between">
+          <div>
+            <a href="#home"
+              class="text-style dark:text-white 2xl:ml-6 hover:text-violet-700 hover:dark:text-violet-500 transition-colors duration-300">
+              &lt; {{details.main.name}} /&gt;
+            </a>
+          </div>
+          <div>
+
+            <ul class="flex items-center gap-8">
+              <li *ngFor="let nav of navs"> 
+                <a href="#{{nav.toLowerCase()}}"
+                  class="hover:text-violet-700 hover:dark:text-violet-500 transition-colors capitalize cursor-pointer dark:text-white ">{{nav}}</a>
+              </li>
+              <span
+                class="hover:bg-gray-100 p-1.5 rounded-full cursor-pointer transition-colors dark:text-white hover:dark:bg-violet-700">
+                <div *ngIf="!isDarkEnable" (click)="toggleDarkMode()" class="dark:text-white">
+
+                  <img src="./../assets/svg/moon.svg" alt="change to dark mode" width="15" height="15"
+                    title="change to dark mode">
+                </div>
+                <div *ngIf="isDarkEnable" (click)="toggleDarkMode()" class="dark:text-white">
+
+                  <svg stroke="currentColor" fill="none" stroke-width="2" viewBox="0 0 24 24" stroke-linecap="round"
+                    stroke-linejoin="round" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg">
+                    <circle cx="12" cy="12" r="5"></circle>
+                    <line x1="12" y1="1" x2="12" y2="3"></line>
+                    <line x1="12" y1="21" x2="12" y2="23"></line>
+                    <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+                    <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+                    <line x1="1" y1="12" x2="3" y2="12"></line>
+                    <line x1="21" y1="12" x2="23" y2="12"></line>
+                    <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+                    <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+                  </svg>
+                </div>
+
+              </span>
+            </ul>
+          </div>
+        </nav>
+        <nav
+          class="lg:w-11/12 2xl:w-4/5 w-full md:px-6 2xl:px-0 mx-auto py-4 flex sm:hidden items-center justify-between">
+          <div routerLink="/#home"
+            class="flex items-center gap-4 mx-4 text-style dark:text-white 2xl:ml-6 hover:text-violet-700 hover:dark:text-violet-500">
+            &lt; {{details.main.name}} /&gt;
+          </div>
+          <div class="flex items-center gap-4 mx-4">
+            <span
+              class="hover:bg-gray-100 p-1.5 rounded-full cursor-pointer transition-colors dark:text-white hover:dark:bg-violet-700 dark:bg-violet-700">
+              <div *ngIf="!isDarkEnable" (click)="toggleDarkMode()" class="dark:text-white">
+
+                <img src="./../assets/svg/moon.svg" alt="change to dark mode" width="15" height="15"
+                  title="change to dark mode">
+              </div>
+              <div *ngIf="isDarkEnable" (click)="toggleDarkMode()" class="dark:text-white">
+                <svg stroke="currentColor" fill="none" stroke-width="2" viewBox="0 0 24 24" stroke-linecap="round"
+                  stroke-linejoin="round" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg">
+                  <circle cx="12" cy="12" r="5"></circle>
+                  <line x1="12" y1="1" x2="12" y2="3"></line>
+                  <line x1="12" y1="21" x2="12" y2="23"></line>
+                  <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+                  <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+                  <line x1="1" y1="12" x2="3" y2="12"></line>
+                  <line x1="21" y1="12" x2="23" y2="12"></line>
+                  <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+                  <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+                </svg>
+              </div>
+            </span>
+            <button (click)="sidenav.toggle()" class="focus:outline-none dark:text-white">
+              <svg stroke="currentColor" fill="none" stroke-width="0" viewBox="0 0 24 24" height="20" width="20"
+                xmlns="http://www.w3.org/2000/svg">
+                <path
+                  d="M22 18.0048C22 18.5544 21.5544 19 21.0048 19H12.9952C12.4456 19 12 18.5544 12 18.0048C12 17.4552 12.4456 17.0096 12.9952 17.0096H21.0048C21.5544 17.0096 22 17.4552 22 18.0048Z"
+                  fill="currentColor"></path>
+                <path
+                  d="M22 12.0002C22 12.5499 21.5544 12.9954 21.0048 12.9954H2.99519C2.44556 12.9954 2 12.5499 2 12.0002C2 11.4506 2.44556 11.0051 2.99519 11.0051H21.0048C21.5544 11.0051 22 11.4506 22 12.0002Z"
+                  fill="currentColor"></path>
+                <path
+                  d="M21.0048 6.99039C21.5544 6.99039 22 6.54482 22 5.99519C22 5.44556 21.5544 5 21.0048 5H8.99519C8.44556 5 8 5.44556 8 5.99519C8 6.54482 8.44556 6.99039 8.99519 6.99039H21.0048Z"
+                  fill="currentColor"></path>
+              </svg>
+            </button>
+
+          </div>
+        </nav>
+      </mat-toolbar>
+      <app-hero [detail]="details.main" />
+      <section class=" dark:bg-gradient-to-b dark:from-grey-900 dark:to-grey-900 dark:text-white">
+        
+        <app-about [about]="details.about" [name]="details.main.name" />
+        <app-skill [skillData]="details.skills" />
+        <app-project [projectsData]="details.projects" />
+        <app-experiance [experiance]="details.experiences" [education]="details.educations" />
+        <app-contact />
+        <app-social [social]="details.socials" />
+        <app-footer [socials]="details.socials" [name]="details.main.name" />
+      </section>
+    </mat-sidenav-content>
+
+  </mat-sidenav-container>  
+</div>

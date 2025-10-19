@@ -1,0 +1,263 @@
+{
+  "main": {
+    "name": "Harsh",
+    "shortDesc": "I focus on developing user-friendly web applications that meet the client's requirements, with attention to detail, scalability, and performance.",
+    "titles": [
+      "Software Development"
+    ],
+    "heroImage": "https://img.freepik.com/free-psd/3d-illustration-person-with-sunglasses_23-2149436188.jpg",
+    "techStackImages": [
+      "https://img.icons8.com/color/144/000000/material-ui.png",
+      "https://img.icons8.com/color/144/000000/html-5--v1.png",
+      "https://img.icons8.com/color/144/000000/redux.png",
+      "https://img.icons8.com/color/144/000000/chakra-ui.png"
+    ]
+  },
+  "about": {
+    "aboutImage": "https://img.freepik.com/free-psd/3d-illustration-person-with-sunglasses_23-2149436188.jpg",
+    "aboutImageCaption": "< Harsh 🚀/>",
+    "title": "Full Stack Developer",
+    "about": "I'm a Full Stack Developer with hands-on experience in building scalable web applications using modern technologies like Angular, .NET Core, and PostgreSQL. With a strong foundation in Computer Science and industry experience at TatvaSoft, I’ve led and contributed to diverse projects. I’m passionate about clean architecture, performance optimization, and writing reusable, maintainable code.",
+    "callUrl": "number",
+    "resumeUrl": "url"
+  },
+  "socials": [
+    {
+      "icon": "https://img.icons8.com/material-outlined/96/null/linkedin.png",
+      "link": "https://www.linkedin.com/in/harsh-turakhia"
+    },
+    {
+      "icon": "https://img.icons8.com/material-outlined/96/null/github.png",
+      "link": "https://github.com/harshturakhia"
+    }
+  ],
+  "skills": [
+    {
+      "name": "C",
+      "image": "https://img.icons8.com/color/144/000000/c-programming.png",
+      "category": "Programming"
+    },
+    {
+      "name": "C++",
+      "image": "https://img.icons8.com/color/144/000000/c-plus-plus-logo.png",
+      "category": "Programming"
+    },
+    {
+      "name": "C#",
+      "image": "https://img.icons8.com/color/144/000000/c-sharp-logo.png",
+      "category": "Programming"
+    },
+    {
+      "name": "JavaScript",
+      "image": "https://img.icons8.com/color/144/000000/javascript--v1.png",
+      "category": "Programming"
+    },
+    {
+      "name": "TypeScript",
+      "image": "https://img.icons8.com/color/144/000000/typescript--v1.png",
+      "category": "Programming"
+    },
+    {
+      "name": "HTML",
+      "image": "https://img.icons8.com/color/144/html-5--v1.png",
+      "category": "Frontend"
+    },
+    {
+      "name": "CSS",
+      "image": "https://img.icons8.com/color/144/css3.png",
+      "category": "Frontend"
+    },
+    {
+      "name": "JavaScript",
+      "image": "https://img.icons8.com/color/144/javascript--v1.png",
+      "category": "Frontend"
+    },
+    {
+      "name": "Bootstrap",
+      "image": "https://img.icons8.com/color/144/bootstrap.png",
+      "category": "Frontend"
+    },
+    {
+      "name": "Tailwind CSS",
+      "image": "https://img.icons8.com/color/144/tailwind_css.png",
+      "category": "Frontend",
+      "link": "https://tailwindcss.com/"
+    },
+    {
+      "name": "Angular",
+      "image": "https://img.icons8.com/color/144/angularjs.png",
+      "category": "Frontend"
+    },
+    {
+      "name": "React.js",
+      "image": "https://img.icons8.com/color/144/react-native.png",
+      "category": "Frontend"
+    },
+    {
+      "name": "Next.js",
+      "image": "https://img.icons8.com/fluency/144/nextjs.png",
+      "category": "Frontend"
+    },
+    {
+      "name": "Node.js",
+      "image": "https://img.icons8.com/color/144/nodejs.png",
+      "category": "Backend"
+    },
+    {
+      "name": "NestJS",
+      "image": "https://img.icons8.com/color/144/nestjs.png",
+      "category": "Backend"
+    },
+    {
+      "name": ".NET Core",
+      "image": "https://img.icons8.com/color/144/microsoft-net-framework.png",
+      "category": "Backend"
+    },
+    {
+      "name": "SSMS",
+      "image": "https://img.icons8.com/color/144/microsoft-sql-server.png",
+      "category": "Database"
+    },
+    {
+      "name": "PostgreSQL",
+      "image": "https://img.icons8.com/color/144/postgreesql.png",
+      "category": "Database"
+    },
+    {
+      "name": "MongoDB",
+      "image": "https://img.icons8.com/color/144/mongodb.png",
+      "category": "Database"
+    },
+    {
+      "name": "Git",
+      "image": "https://img.icons8.com/color/144/git.png",
+      "category": "Tools"
+    },
+    {
+      "name": "Visual Studio Code",
+      "image": "https://img.icons8.com/color/144/visual-studio-code-2019.png",
+      "category": "Tools"
+    },
+    {
+      "name": "Postman",
+      "image": "https://img.icons8.com/external-tal-revivo-color-tal-revivo/144/external-postman-is-the-only-complete-api-development-environment-logo-color-tal-revivo.png",
+      "category": "Tools"
+    },
+    {
+      "name": "NPM",
+      "image": "https://img.icons8.com/color/144/npm.png",
+      "category": "Tools"
+    },
+    {
+      "name": "Docker",
+      "image": "https://img.icons8.com/color/144/docker.png",
+      "category": "Tools"
+    },
+    {
+      "name": "Jira",
+      "image": "https://img.icons8.com/external-tal-revivo-shadow-tal-revivo/144/external-jira-a-software-development-tool-used-by-agile-teams-logo-shadow-tal-revivo.png",
+      "category": "Tools"
+    },
+    {
+      "name": "Visual Studio",
+      "image": "https://img.icons8.com/color/144/visual-studio.png",
+      "category": "Tools"
+    }
+  ],
+  "projects": [
+    {
+      "name": "Warehouse Management System",
+      "order": 1,
+      "techstack": "Angular, .NET Core Minimal Api, PostgreSQL",
+      "category": "Project",
+      "desc1": "Designed and developed a role-based authentication & claim-based authorization, and real-time notifications using SignalR.",
+      "desc2": "Architected the database schema and optimized entity relationships for efficient inventory tracking, order management, and user activity logs.",
+      "image": "https://www.xavor.com/wp-content/uploads/2022/11/full-stack-development-2.jpg",
+      "links": {
+        "techStack": "dc"
+      }
+    },
+    {
+      "name": " Employee Management System & Performance Assessment System",
+      "order": 2,
+      "techstack": "Angular, .NET Core Minimal Api, PostgreSQL",
+      "category": "Project",
+      "desc1": "Designed and developed a role-based authentication & claim-based authorization, and real-time notifications using SignalR.",
+      "desc2": "Architected the database schema and optimized entity relationships for efficient inventory tracking, order management, and user activity logs.",
+      "image": "https://www.xavor.com/wp-content/uploads/2022/11/full-stack-development-2.jpg",
+      "links": {
+        "techStack": "dc"
+      }
+    },
+    {
+      "name": "Tire Dealer Management System",
+      "order": 3,
+      "techstack": "Azure Functions, SQL, Azure Blob Storage & Storage Accounts",
+      "category": "Project",
+      "desc1": "Designed and developed a role-based authentication & claim-based authorization, and real-time notifications using SignalR.",
+      "desc2": "Architected the database schema and optimized entity relationships for efficient inventory tracking, order management, and user activity logs.",
+      "image": "https://www.xavor.com/wp-content/uploads/2022/11/full-stack-development-2.jpg",
+      "links": {
+        "techStack": "dc"
+      }
+    },
+    {
+      "name": "Hospital Management System",
+      "order": 4,
+      "techstack": ".NET MVC, PostgreSQL, Data first approach",
+      "category": "Project",
+      "desc1": "Designed and developed a role-based authentication & claim-based authorization, and real-time notifications using SignalR.",
+      "desc2": "Architected the database schema and optimized entity relationships for efficient inventory tracking, order management, and user activity logs.",
+      "image": "https://www.xavor.com/wp-content/uploads/2022/11/full-stack-development-2.jpg",
+      "links": {
+        "techStack": "dc"
+      }
+    },
+    {
+      "name": "Chatish - Chat Application",
+      "order": 5,
+      "techstack": "Reactjs, Nodejs, Expressjs, MongoDb",
+      "category": "Project",
+      "desc1": "Designed and developed a role-based authentication & claim-based authorization, and real-time notifications using SignalR.",
+      "desc2": "Architected the database schema and optimized entity relationships for efficient inventory tracking, order management, and user activity logs.",
+      "image": "https://www.xavor.com/wp-content/uploads/2022/11/full-stack-development-2.jpg",
+      "links": {
+        "techStack": "dc"
+      }
+    }
+  ],
+  "educations": [
+    {
+      "institute": "Shree N. P. Bhalodia High School | GSEB",
+      "degree": "Science Stream",
+      "duration": "2018 - 2020",
+      "desc": []
+    },
+    {
+      "institute": "LDRP ITR",
+      "degree": "B. E.",
+      "duration": "2020 - 2024",
+      "desc": []
+    }
+  ],
+  "experiences": [
+    {
+      "company": "TatvaSoft",
+      "position": "Trainee",
+      "duration": "Jan 2024 - Jun 2024",
+      "desc": []
+    },
+    {
+      "company": "TatvaSoft",
+      "position": "Associate Software Engineer",
+      "duration": " Jul '24 - Jun '25",
+      "desc": []
+    },
+    {
+      "company": "TatvaSoft",
+      "position": "Software Engineer",
+      "duration": "Jul '25 - Current",
+      "desc": []
+    }
+  ]
+}

@@ -1,0 +1,36 @@
+<div [ngClass]="{'md:flex-row-reverse left-timeline': index % 2 === 0, 'right-timeline': index % 2 !== 0}"
+    class="mb-6 md:mb-8 flex md:justify-between items-center w-full">
+    <div class="order-1 md:w-5/12"></div>
+
+    <span *ngIf="company || institute"
+        class="z-20 flex items-center order-1 justify-center w-6 h-6 md:w-9 md:h-9 bg-violet-200 dark:bg-violet-600 rounded-full ring-4 md:ring-8 ring-white dark:ring-gray-900 ">
+        <!-- <md-icon *ngIf="company" class="text-base md:text-xl text-violet-600 dark:text-violet-400">work</md-icon> -->
+        <div *ngIf="company" class="text-base md:text-xl text-violet-600 ">
+            <svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 24 24"
+                class="text-base md:text-xl text-violet-600 dark:text-violet-300 " height="1em" width="1em"
+                xmlns="http://www.w3.org/2000/svg">
+                <path fill="none" d="M0 0h24v24H0z"></path>
+                <path
+                    d="M20 6h-4V4c0-1.11-.89-2-2-2h-4c-1.11 0-2 .89-2 2v2H4c-1.11 0-1.99.89-1.99 2L2 19c0 1.11.89 2 2 2h16c1.11 0 2-.89 2-2V8c0-1.11-.89-2-2-2zm-6 0h-4V4h4v2z">
+                </path>
+            </svg>
+        </div>
+        <!-- <md-icon *ngIf="institute" class="text-base md:text-xl text-violet-600 dark:text-violet-400">school</md-icon> -->
+        <div *ngIf="institute" class="text-base md:text-xl text-violet-600  ">
+            <svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 24 24"
+                class="text-base md:text-xl text-violet-600 dark:text-violet-300 " height="1em" width="1em"
+                xmlns="http://www.w3.org/2000/svg">
+                <path fill="none" d="M0 0h24v24H0z"></path>
+                <path d="M5 13.18v4L12 21l7-3.82v-4L12 17l-7-3.82zM12 3L1 9l11 6 9-4.91V17h2V9L12 3z"></path>
+            </svg>
+        </div>
+    </span>
+
+    <div class="order-1 rounded-lg w-full ml-3 md:ml-0 bg-white dark:bg-grey-800 md:w-5/12 p-3 md:px-4 md:py-4">
+        <h3 class="mb-2 text-lg text-xl">{{company || institute}}</h3>
+        <p class="text-lg text-gray-500 dark:text-gray-400 font-medium">{{position || degree}} | {{duration}}</p>
+        <ul *ngIf="desc" class="text-sm text-gray-400 mt-2 ml-4 list-disc">
+            <li *ngFor="let d of desc" class='mb-0.5'>{{d}}</li>
+        </ul>
+    </div>
+</div>

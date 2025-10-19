@@ -1,0 +1,45 @@
+<section id="contact"
+    class="mb-16 mx-4 lg:mx-0  bg-gradient-to-b from-white to-gray-100/20 dark:from-grey-900 dark:to-grey-900 dark:text-white">
+    <h2 class="text-center text-4xl">Contact Me</h2>
+    <div class="w-full lg:w-5/6 2xl:w-3/4 mt-10 md:mt-16 mx-auto flex justify-between rounded-xl">
+        <img alt="contact" src="./../../../assets/images/contact.png" class="hidden md:block w-1/2 h-full object-cover"
+            width="1000" height="1000" />
+        <form [formGroup]="contactForm" (ngSubmit)="onSubmit()">
+            <div class="w-full lg:w-5/6 2xl:w-3/4 mt-10 md:mt-16 mx-auto flex justify-between rounded-xl">
+                <div class="flex-1">
+                    <h3 class="text-2xl">Get in touch</h3>
+                    <p class="text-gray-400 mb-4 text-sm md:text-base">
+                        My inbox is always open. Whether you have a question or just want to say hello, I will try my
+                        best
+                        to get back to you!
+                    </p>
+                    <div class="flex flex-col gap-4 rounded-xl">
+                        <input type="text"
+                            class="outline-none bg-gray-100 dark:bg-grey-800 placeholder-gray-400 rounded-lg py-3 px-4"
+                            formControlName="name" placeholder="Full Name *" />
+                        <div class="error-message"
+                            *ngIf="contactForm.controls['name'].invalid && (contactForm.controls['name'].dirty || contactForm.controls['name'].touched)">
+                            Name is required</div>
+                        <input type="email"
+                            class="outline-none bg-gray-100 dark:bg-grey-800 placeholder-gray-400 rounded-lg py-3 px-4"
+                            formControlName="email" placeholder="Email *" />
+                        <div class="error-message"
+                            *ngIf="contactForm.controls['email'].invalid && (contactForm.controls['email'].dirty || contactForm.controls['email'].touched)">
+                            Email is required</div>
+                        <textarea rows="4"
+                            class="outline-none resize-none bg-gray-100 dark:bg-grey-800 placeholder-gray-400 rounded-lg py-3 px-4"
+                            formControlName="message" placeholder="Message *"></textarea>
+                        <div class="error-message"
+                            *ngIf="contactForm.controls['message'].invalid && (contactForm.controls['message'].dirty || contactForm.controls['message'].touched)">
+                            Message is required</div>
+                        <button [disabled]="!contactForm.valid || loading"
+                            class="px-4 py-2 bg-violet-600 hover:bg-violet-700 transition-colors text-white rounded-lg disabled:cursor-not-allowed self-end">
+                            <span *ngIf="!loading">Say Hello 👋</span>
+                            <span *ngIf="loading">Say Hello <i class="animate-spin bx bx-loader-alt"></i></span>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </form>
+    </div>
+</section>
