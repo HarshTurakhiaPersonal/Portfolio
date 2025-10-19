@@ -182,8 +182,8 @@
       "order": 2,
       "techstack": "Angular, .NET Core Minimal Api, PostgreSQL",
       "category": "Project",
-      "desc1": "Developed and optimized a comprehensive Employee Management System and Performance Assessment System,  ntegrating modules for employee roles, salary management, resignations, and data imports with seamless backend connectivity.",
-      "desc2": "Created reusable Angular components and optimized stored procedures to enhance application performance and scalability",
+      "desc2": "Developed and optimized a comprehensive Employee Management System and Performance Assessment System,  integrating modules and data imports with seamless backend connectivity.",
+      "desc1": "Designed and created reusable Angular components and optimized stored procedures from 30s to 9.6s to enhance application performance",
       "image": "https://www.xavor.com/wp-content/uploads/2022/11/full-stack-development-2.jpg",
       "links": {
         "techStack": "dc"
