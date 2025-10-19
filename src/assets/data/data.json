@@ -182,8 +182,8 @@
       "order": 2,
       "techstack": "Angular, .NET Core Minimal Api, PostgreSQL",
       "category": "Project",
-      "desc1": "Designed and developed a role-based authentication & claim-based authorization, and real-time notifications using SignalR.",
-      "desc2": "Architected the database schema and optimized entity relationships for efficient inventory tracking, order management, and user activity logs.",
+      "desc1": "Developed and optimized a comprehensive Employee Management System and Performance Assessment System,  ntegrating modules for employee roles, salary management, resignations, and data imports with seamless backend connectivity.",
+      "desc2": "Created reusable Angular components and optimized stored procedures to enhance application performance and scalability",
       "image": "https://www.xavor.com/wp-content/uploads/2022/11/full-stack-development-2.jpg",
       "links": {
         "techStack": "dc"
@@ -194,8 +194,8 @@
       "order": 3,
       "techstack": "Azure Functions, SQL, Azure Blob Storage & Storage Accounts",
       "category": "Project",
-      "desc1": "Designed and developed a role-based authentication & claim-based authorization, and real-time notifications using SignalR.",
-      "desc2": "Architected the database schema and optimized entity relationships for efficient inventory tracking, order management, and user activity logs.",
+      "desc1": "Leading the migration project of a Vehicle Tire Dealer Management System to Azure Functions, optimizing scalability, performance.",
+      "desc2": "Working in an Agile environment with Jira, contributing to sprint execution, cloud deployments, and crossfunctional collaboration",
       "image": "https://www.xavor.com/wp-content/uploads/2022/11/full-stack-development-2.jpg",
       "links": {
         "techStack": "dc"
@@ -206,8 +206,8 @@
       "order": 4,
       "techstack": ".NET MVC, PostgreSQL, Data first approach",
       "category": "Project",
-      "desc1": "Designed and developed a role-based authentication & claim-based authorization, and real-time notifications using SignalR.",
-      "desc2": "Architected the database schema and optimized entity relationships for efficient inventory tracking, order management, and user activity logs.",
+      "desc1": "Gained hands-on experience in .NET MVC, developing a Hospital Management System with multi-role access control and status-based workflows.",
+      "desc2": "",
       "image": "https://www.xavor.com/wp-content/uploads/2022/11/full-stack-development-2.jpg",
       "links": {
         "techStack": "dc"
@@ -218,8 +218,8 @@
       "order": 5,
       "techstack": "Reactjs, Nodejs, Expressjs, MongoDb",
       "category": "Project",
-      "desc1": "Designed and developed a role-based authentication & claim-based authorization, and real-time notifications using SignalR.",
-      "desc2": "Architected the database schema and optimized entity relationships for efficient inventory tracking, order management, and user activity logs.",
+      "desc1": "Developed a real-time chat platform enabling individual and group messaging with user search and light/dark themes.",
+      "desc2": "Implemented end-to-end encryption using crypto.js and achieved seamless synchronization using WebSockets. ",
       "image": "https://www.xavor.com/wp-content/uploads/2022/11/full-stack-development-2.jpg",
       "links": {
         "techStack": "dc"
