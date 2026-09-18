@@ -1,0 +1,61 @@
+<section id="experience" class="section">
+  <div revealOnScroll class="section-eyebrow">
+    <span>02.</span>
+    <span>Experience</span>
+  </div>
+  <h2 class="section-title" revealOnScroll [revealDelay]="100">
+    Professional career &amp; <span class="accent-gradient">engineering impact</span>.
+  </h2>
+
+  <!-- Clean Professional Timeline -->
+  <div class="craft-timeline" revealOnScroll [revealDelay]="150">
+    @for (item of experiences(); track (item.company + item.position); let i = $index) {
+      <div class="timeline-entry" [style]="'--entry-delay:' + (i * 70) + 'ms'">
+        <div class="timeline-marker" [class.is-current]="i === 0">
+          <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <rect x="2" y="7" width="20" height="14" rx="2" ry="2"/>
+            <path d="M16 21V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v16"/>
+          </svg>
+        </div>
+
+        <div class="timeline-card craft-card spotlight-card" cardTilt>
+          <div class="entry-header">
+            <div class="entry-title-group">
+              <h3 class="entry-title">{{ item.position }}</h3>
+              <p class="entry-org font-medium text-accent">
+                <span>{{ item.company }}</span>
+                <span class="entry-location text-muted font-mono">
+                  <svg class="entry-icon loc-icon" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/>
+                    <circle cx="12" cy="10" r="3"/>
+                  </svg>
+                  <span>{{ item.location }}</span>
+                </span>
+              </p>
+            </div>
+            <span class="craft-pill entry-duration font-mono" [class.current-pill]="i === 0">
+              <svg class="entry-icon cal-icon" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <rect x="3" y="4" width="18" height="18" rx="2" ry="2"/>
+                <line x1="16" y1="2" x2="16" y2="6"/>
+                <line x1="8" y1="2" x2="8" y2="6"/>
+                <line x1="3" y1="10" x2="21" y2="10"/>
+              </svg>
+              <span>{{ item.duration }}</span>
+            </span>
+          </div>
+
+          @if (item.desc?.length) {
+            <ul class="entry-bullets" role="list">
+              @for (bullet of item.desc; track bullet) {
+                <li class="bullet-item text-secondary">
+                  <span class="bullet-dash text-accent">-</span>
+                  <span>{{ bullet }}</span>
+                </li>
+              }
+            </ul>
+          }
+        </div>
+      </div>
+    }
+  </div>
+</section>

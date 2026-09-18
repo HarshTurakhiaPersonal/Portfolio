@@ -1,0 +1,57 @@
+<section id="skills" class="section">
+  <div revealOnScroll class="section-eyebrow">
+    <span>04.</span>
+    <span>Technical Arsenal</span>
+  </div>
+  <h2 class="section-title" revealOnScroll [revealDelay]="100">
+    Battle-tested frameworks, <span class="accent-gradient">languages &amp; platforms</span>.
+  </h2>
+
+  <!-- Filter Pills -->
+  <div class="skills-filter-row" revealOnScroll [revealDelay]="150">
+    <button
+      class="filter-pill"
+      [class.active]="selectedCategory() === null"
+      (click)="selectedCategory.set(null)">
+      <span>All Skills</span>
+      <span class="pill-count">{{ dataSkills().length }}</span>
+    </button>
+
+    @for (cat of categories(); track cat) {
+      <button
+        class="filter-pill"
+        [class.active]="selectedCategory() === cat"
+        (click)="selectedCategory.set(cat)">
+        <span>{{ cat }}</span>
+        <span class="pill-count">{{ getCountForCategory(cat) }}</span>
+      </button>
+    }
+  </div>
+
+  <!-- Craft Skill Grid -->
+  <div class="craft-skills-grid">
+    @for (skill of filteredSkills(); track skill.name; let i = $index) {
+      <div
+        class="skill-card craft-card spotlight-card"
+        cardTilt
+        revealOnScroll
+        [revealDelay]="(i % 8) * 35">
+
+        <div class="skill-icon-frame">
+          <img
+            [src]="skill.image"
+            [alt]="skill.name + ' logo'"
+            width="34"
+            height="34"
+            loading="lazy"
+            class="skill-logo" />
+        </div>
+
+        <div class="skill-meta">
+          <h3 class="skill-name">{{ skill.name }}</h3>
+          <span class="skill-category-label">{{ skill.category }}</span>
+        </div>
+      </div>
+    }
+  </div>
+</section>

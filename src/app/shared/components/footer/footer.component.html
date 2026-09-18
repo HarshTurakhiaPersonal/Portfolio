@@ -1,0 +1,28 @@
+<footer class="craft-footer">
+  <div class="footer-inner">
+    <div class="footer-left">
+      <div class="footer-brand">
+        <span class="brand-monogram">HT</span>
+        <span class="brand-text">Harsh Turakhia</span>
+      </div>
+      <p class="footer-subline text-muted">
+        Full Stack Software Engineer
+      </p>
+    </div>
+
+    <div class="footer-right">
+      <div class="footer-social-links">
+        @for (s of socials(); track s.link) {
+          <a
+            [href]="s.link"
+            target="_blank"
+            rel="noopener noreferrer"
+            [attr.aria-label]="s.label"
+            class="footer-social-btn">
+            <img [src]="s.icon" [alt]="s.label + ' icon'" width="16" height="16" loading="lazy" />
+          </a>
+        }
+      </div>
+    </div>
+  </div>
+</footer>

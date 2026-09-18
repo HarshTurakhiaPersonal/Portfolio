@@ -1,0 +1,252 @@
+{
+  "main": {
+    "name": "Harsh Turakhia",
+    "shortDesc": "Full Stack Software Engineer",
+    "titles": [
+      "Full Stack Software Engineer",
+      "Software Engineer @ Technovate One",
+      "Angular & .NET Core Specialist"
+    ],
+    "heroImage": "/assets/images/user.jpg",
+    "techStackImages": []
+  },
+  "about": {
+    "aboutImage": "/assets/images/user.jpg",
+    "aboutImageCaption": "< Harsh Turakhia />",
+    "title": "Full Stack Software Engineer",
+    "about": "Full Stack Software Engineer experienced in designing and developing scalable web applications in C#, .NET Core, Web API, Angular, SQL Server/PostgreSQL and Azure Functions. \n \n Experienced in building scalable SaaS applications, REST APIs, reusable frontend components & managing CI/CD pipelines and cloud-based solutions. Strong hands-on experience across frontend, backend, database and cloud layers with a focus on performance, reliability and maintainability.",
+    "callUrl": "tel:+918866103895",
+    "resumeUrl": "/assets/docs/Harsh Turakhia.pdf"
+  },
+  "socials": [
+    {
+      "icon": "https://img.icons8.com/material-outlined/96/null/linkedin.png",
+      "label": "LinkedIn",
+      "link": "https://www.linkedin.com/in/harsh-turakhia"
+    },
+    {
+      "icon": "https://img.icons8.com/material-outlined/96/null/github.png",
+      "label": "GitHub",
+      "link": "https://github.com/harshturakhia"
+    }
+  ],
+  "skills": [
+    {
+      "name": "C# (.NET)",
+      "image": "https://img.icons8.com/color/144/c-sharp-logo.png",
+      "category": "Languages"
+    },
+    {
+      "name": "TypeScript",
+      "image": "https://img.icons8.com/color/144/typescript--v1.png",
+      "category": "Languages"
+    },
+    {
+      "name": "JavaScript",
+      "image": "https://img.icons8.com/color/144/javascript--v1.png",
+      "category": "Languages"
+    },
+    {
+      "name": "SQL",
+      "image": "https://img.icons8.com/color/144/sql.png",
+      "category": "Languages"
+    },
+    {
+      "name": "Angular 18+",
+      "image": "https://img.icons8.com/color/144/angularjs.png",
+      "category": "Frontend"
+    },
+    {
+      "name": "React.js",
+      "image": "https://img.icons8.com/color/144/react-native.png",
+      "category": "Frontend"
+    },
+    {
+      "name": "Next.js",
+      "image": "https://img.icons8.com/fluency/144/nextjs.png",
+      "category": "Frontend"
+    },
+    {
+      "name": "PrimeNG",
+      "image": "https://img.icons8.com/color/144/diamond.png",
+      "category": "Frontend"
+    },
+    {
+      "name": "Tailwind CSS",
+      "image": "https://img.icons8.com/color/144/tailwind_css.png",
+      "category": "Frontend"
+    },
+    {
+      "name": "Bootstrap",
+      "image": "https://img.icons8.com/color/144/bootstrap.png",
+      "category": "Frontend"
+    },
+    {
+      "name": "ASP.NET Core",
+      "image": "https://img.icons8.com/?size=100&id=z2gsPTsahvBW&format=png",
+      "category": "Backend"
+    },
+    {
+      "name": ".NET Core 8",
+      "image": "https://img.icons8.com/color/144/c-sharp-logo.png",
+      "category": "Backend"
+    },
+    {
+      "name": ".NET MVC",
+      "image": "https://img.icons8.com/color/144/api-settings.png",
+      "category": "Backend"
+    },
+    {
+      "name": "EF Core",
+      "image": "https://img.icons8.com/color/144/code-fork.png",
+      "category": "Backend"
+    },
+    {
+      "name": "LINQ",
+      "image": "https://img.icons8.com/color/144/database.png",
+      "category": "Backend"
+    },
+    {
+      "name": "Strapi v5",
+      "image": "https://img.icons8.com/color/144/source-code.png",
+      "category": "Backend"
+    },
+    {
+      "name": "Node JS",
+      "image": "https://img.icons8.com/?size=100&id=hsPbhkOH4FMe&format=png",
+      "category": "Backend"
+    },
+    {
+      "name": "PostgreSQL",
+      "image": "https://img.icons8.com/color/144/postgreesql.png",
+      "category": "Database"
+    },
+    {
+      "name": "SQL Server",
+      "image": "https://img.icons8.com/color/144/microsoft-sql-server.png",
+      "category": "Database"
+    },
+    {
+      "name": "MongoDB",
+      "image": "https://img.icons8.com/color/144/mongodb.png",
+      "category": "Database"
+    },
+    {
+      "name": "Azure Functions",
+      "image": "https://img.icons8.com/color/144/azure-1.png",
+      "category": "Cloud & DevOps"
+    },
+    {
+      "name": "Azure Blob Storage",
+      "image": "https://img.icons8.com/color/144/azure-1.png",
+      "category": "Cloud & DevOps"
+    },
+    {
+      "name": "Azure Key Vault",
+      "image": "https://img.icons8.com/color/144/azure-1.png",
+      "category": "Cloud & DevOps"
+    },
+    {
+      "name": "Azure Repos / CI",
+      "image": "https://img.icons8.com/color/144/azure-1.png",
+      "category": "Cloud & DevOps"
+    },
+    {
+      "name": "Agile / Scrum",
+      "image": "https://img.icons8.com/color/144/workflow.png",
+      "category": "Cloud & DevOps"
+    }
+  ],
+  "projects": [
+    {
+      "name": "Digital Marketing Platform",
+      "order": 1,
+      "image": "/assets/images/user.jpg",
+      "techstack": "Next.js 16, .NET 8 (C#), EF Core, PostgreSQL, JIRA, Azure Repos",
+      "tags": ["Next.js 16", ".NET 8 (C#)", "EF Core", "PostgreSQL", "Cron Worker", "Azure Repos"],
+      "category": "Enterprise Integration Platform",
+      "desc1": "Designed a central server to act as an integration hub for a multi-tenant digital marketing platform, ensuring all third-party API calls were routed, tracked, and controlled centrally for better observability and security while eliminating duplicate applications.",
+      "desc2": "Implemented a centralized Failed API Call Logging System along with a custom Background-Service (Cron Worker) that periodically retrieves pending failed API requests, reconstructs them using stored metadata, and safely retries them using dependency injection.",
+      "links": {
+        "github": "https://github.com/harshturakhia",
+        "demo": "https://harshturakhia.vercel.app"
+      },
+      "highlight": "Centralized Failed API Call Logger + Background Cron Worker for Safe Auto-Retries"
+    },
+    {
+      "name": "Performance Assessment System",
+      "order": 2,
+      "image": "/assets/images/user.jpg",
+      "techstack": "Angular 18, .NET Minimal API (C#), EF Core, LINQ, PostgreSQL",
+      "tags": [
+        "Angular 18",
+        ".NET Minimal API",
+        "EF Core",
+        "LINQ",
+        "PostgreSQL",
+        "KRA/KPI Scoring"
+      ],
+      "category": "HR Tech & Assessment Engine",
+      "desc1": "Architected and implemented dynamic KRA/KPI scoring algorithms to quantitatively evaluate employee performance and generate objective grading and appraisal outputs in a scalable application architecture with multi-level appraisal workflows used by HR teams.",
+      "desc2": "Created reusable Angular components to improve UI consistency and development speed, and optimized stored procedures to reduce page load times, significantly improving application responsiveness and scalability.",
+      "links": {
+        "github": "https://github.com/harshturakhia",
+        "demo": "https://harshturakhia.vercel.app"
+      },
+      "highlight": "Dynamic KRA/KPI Quantitative Scoring Algorithm + Multi-Level Appraisal Workflows"
+    },
+    {
+      "name": "Warehouse Management System",
+      "order": 3,
+      "image": "/assets/images/user.jpg",
+      "techstack": "React + TypeScript, .NET Core Minimal API (C#), EF Core, SignalR, Azure Repos, PostgreSQL",
+      "tags": [
+        "React + TypeScript",
+        ".NET Minimal API",
+        "EF Core",
+        "SignalR",
+        "PostgreSQL",
+        "JWT & Claims"
+      ],
+      "category": "Logistics & Real-Time Supply Chain",
+      "desc1": "Designed and developed a Warehouse Management System using .NET Core Minimal API (C#) and React + TypeScript, implementing JWT authentication and claim-based authorization to enforce role-specific access.",
+      "desc2": "Integrated SignalR for real-time inventory update notifications and order status tracking; architected PostgreSQL database schema with optimized entity relationships for high-throughput inventory tracking, order management, and user activity logs.",
+      "links": {
+        "github": "https://github.com/harshturakhia",
+        "demo": "https://harshturakhia.vercel.app"
+      },
+      "highlight": "Real-Time SignalR Inventory Tracking + Claim-Based JWT Authorization"
+    }
+  ],
+  "experiences": [
+    {
+      "company": "Technovate One",
+      "position": "Software Engineer",
+      "duration": "Jun'26 - Present",
+      "location": "Ahmedabad, India",
+      "desc": [
+        "Architected a Trend Forecasting Module that consolidated 3 separate backend API calls into single unified endpoint with client side metric filtering, significantly reducing server loads & network overhead.",
+        "Owned end-to-end delivery of a full-stack Angular 22 SSR platform for a Government Agency client architecting a Strapi v5 headless CMS backend with custom content types, REST API integration, and role-based content access control from initial design to production deployment."
+      ]
+    },
+    {
+      "company": "TatvaSoft",
+      "position": "Associate Software Engineer",
+      "duration": "Jan'24 - May'26",
+      "location": "Ahmedabad, India",
+      "desc": [
+        "Led the transformation of a legacy monolithic Tire Dealer Management System into a cloud-native, microservices-based architecture using Azure Functions & Azure Blob Storage, enabling modular application development and improved scalability.",
+        "Managed CI/CD pipelines in Azure DevOps for development environment testing to streamline delivery and catch integration issues development cycle.",
+        "Collaborated with clients and cross-functional teams in Agile sprints, translating requirements into technical solutions, coordinating development activities, and supporting iterative feature delivery."
+      ]
+    }
+  ],
+  "educations": [
+    {
+      "institute": "LDRP Institute of Technology & Research",
+      "degree": "B.E. Computer Engineering",
+      "duration": "2020 - 2024",
+      "desc": ["First Class with Distinction", "Gandhinagar, Gujarat"]
+    }
+  ]
+}

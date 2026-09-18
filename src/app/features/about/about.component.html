@@ -1,0 +1,68 @@
+<section id="about" class="section">
+  <div revealOnScroll class="section-eyebrow">
+    <span>01.</span>
+    <span>About Me</span>
+  </div>
+  <h2 class="section-title" revealOnScroll [revealDelay]="100">
+    Engineering scalable software with <span class="accent-gradient">end-to-end ownership</span>.
+  </h2>
+
+  <div class="craft-about-grid">
+    <!-- Card 1: Professional Background -->
+    <div class="craft-card spotlight-card about-summary-card" cardTilt revealOnScroll [revealDelay]="150">
+      <div class="card-content">
+        <span class="card-eyebrow">PROFESSIONAL SUMMARY</span>
+        <h3 class="about-card-heading">
+          High-performance web applications, resilient APIs &amp; cloud infrastructure.
+        </h3>
+        <p class="about-card-text">
+          {{ about()?.about }}
+        </p>
+        <div class="about-skills-row">
+          <span class="craft-pill">C# / .NET Core</span>
+          <span class="craft-pill">Angular</span>
+          <span class="craft-pill">PostgreSQL / SQL Server</span>
+          <span class="craft-pill">Azure Functions &amp; Azure Blob Storage</span>
+          <span class="craft-pill">REST APIs</span>
+        </div>
+      </div>
+    </div>
+
+    <!-- Card 2: Current & Prior Track Record -->
+    <div class="craft-card spotlight-card about-track-record-card" cardTilt revealOnScroll [revealDelay]="200">
+      <div class="card-content">
+        <span class="card-eyebrow">CAREER MILESTONES</span>
+
+        <!-- Current Role -->
+        <div class="track-record-item">
+          <div class="track-header">
+            <div>
+              <h4 class="track-company">Technovate One</h4>
+              <p class="track-role text-accent">Software Engineer</p>
+            </div>
+            <span class="status-badge">Current</span>
+          </div>
+          <p class="track-desc text-secondary">
+            Leading end-to-end full-stack delivery of an Angular 22 SSR platform with Strapi v5 headless CMS and architecting a Trend Forecasting backend module with unified API endpoints.
+          </p>
+        </div>
+
+        <div class="track-divider"></div>
+
+        <!-- Prior Role -->
+        <div class="track-record-item">
+          <div class="track-header">
+            <div>
+              <h4 class="track-company">TatvaSoft</h4>
+              <p class="track-role text-secondary">Associate Software Engineer</p>
+            </div>
+            <span class="craft-pill font-mono">Jan '24 - May '26</span>
+          </div>
+          <p class="track-desc text-secondary">
+            Transformed legacy monolithic systems into cloud-native microservices using Azure Functions &amp; Blob Storage; managed Azure DevOps CI/CD pipelines.
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>

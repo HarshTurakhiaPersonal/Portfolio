@@ -1,0 +1,109 @@
+<header
+  class="craft-nav-wrapper"
+  [class.scrolled]="isScrolled()"
+  [class.menu-open]="menuOpen()">
+
+  <nav class="craft-nav-dock">
+    <!-- Brand -->
+    <a href="#home" class="nav-brand" aria-label="Harsh Turakhia">
+      <div class="brand-avatar">
+        <span>HT</span>
+      </div>
+      <div class="brand-info">
+        <span class="brand-name">Harsh Turakhia</span>
+        <span class="brand-title">Software Engineer</span>
+      </div>
+    </a>
+
+    <!-- Navigation Menu (Desktop with 6.1 Scroll Spy Active State) -->
+    <ul class="nav-links" role="list">
+      @for (item of navItems; track item.href) {
+        <li>
+          <a
+            [href]="item.href"
+            class="nav-link"
+            [class.active]="activeSection() === item.href.slice(1)"
+            (click)="menuOpen.set(false)">
+            {{ item.label }}
+          </a>
+        </li>
+      }
+    </ul>
+
+    <!-- Right Controls -->
+    <div class="nav-actions">
+      <!-- Theme Switcher -->
+      <button
+        class="theme-toggle-btn"
+        (click)="themeService.toggle()"
+        [attr.aria-label]="'Switch to ' + (isDark() ? 'light' : 'dark') + ' mode'">
+        @if (isDark()) {
+          <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <circle cx="12" cy="12" r="5"/><line x1="12" y1="1" x2="12" y2="3"/><line x1="12" y1="21" x2="12" y2="23"/>
+            <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"/><line x1="18.36" y1="18.36" x2="19.78" y2="19.78"/>
+            <line x1="1" y1="12" x2="3" y2="12"/><line x1="21" y1="12" x2="23" y2="12"/>
+            <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"/><line x1="18.36" y1="5.64" x2="19.78" y2="4.22"/>
+          </svg>
+        } @else {
+          <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/>
+          </svg>
+        }
+      </button>
+
+      <!-- Resume Button -->
+      <a
+        href="/assets/docs/Harsh Turakhia.pdf"
+        target="_blank"
+        rel="noopener noreferrer"
+        class="nav-resume-btn"
+        aria-label="Download Resume PDF">
+        <span>Resume</span>
+        <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+          <path d="M7 17l9.2-9.2M17 17V7H7"/>
+        </svg>
+      </a>
+
+      <!-- Mobile Hamburger -->
+      <button
+        class="mobile-toggle-btn"
+        (click)="menuOpen.update(v => !v)"
+        [attr.aria-label]="menuOpen() ? 'Close menu' : 'Open menu'">
+        <span class="bar bar-1"></span>
+        <span class="bar bar-2"></span>
+      </button>
+    </div>
+  </nav>
+
+  <!-- Mobile Dropdown Menu -->
+  @if (menuOpen()) {
+    <div class="mobile-menu-panel">
+      <ul class="mobile-nav-list" role="list">
+        @for (item of navItems; track item.href) {
+          <li>
+            <a
+              [href]="item.href"
+              class="mobile-nav-link"
+              [class.active]="activeSection() === item.href.slice(1)"
+              (click)="menuOpen.set(false)">
+              <span>{{ item.label }}</span>
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                <polyline points="9 18 15 12 9 6"/>
+              </svg>
+            </a>
+          </li>
+        }
+      </ul>
+      <a
+        href="/assets/docs/Harsh Turakhia.pdf"
+        target="_blank"
+        rel="noopener noreferrer"
+        class="btn-solid mobile-resume-full">
+        <span>Download Resume</span>
+        <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+          <path d="M7 17l9.2-9.2M17 17V7H7"/>
+        </svg>
+      </a>
+    </div>
+  }
+</header>
